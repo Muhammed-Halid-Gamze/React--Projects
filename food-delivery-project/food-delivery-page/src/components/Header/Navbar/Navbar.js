@@ -5,6 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
+import Button from '@mui/material/Button';
 
 // import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
@@ -13,6 +14,8 @@ import vector from "../../../assets/Vector.png";
 import line from "../../../assets/Line 1.png";
 import shoppingCart from "../../../assets/Shopping cart.png";
 import { display, height } from "@mui/system";
+
+const pages = ['Home', 'Menu', 'Contact', 'Shop'];
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -108,6 +111,42 @@ export default function Navbar() {
           >
             Foo
           </Typography>
+          <Box 
+          sx={{ 
+            flexGrow: 1, 
+            display: { xs: 'none', md: 'flex' },
+
+             }}>
+            {pages.map((page) => (
+              <Button
+                
+                sx={{
+                   my: 2, 
+                   color: 'black', 
+                   display: 'block',
+                   fontFamily:'Poppins',
+                   fontStyle:'normal',
+                   fontWeight:'400',
+                   fontSize:'22px',
+                   lineHeight:'94.8%',
+                   textTransform:'none',
+                   padding:'0 28px',
+                   "&:hover":{
+                     background:'none'
+                   }
+                   
+
+
+
+
+
+
+                  }}
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
           <Search
             sx={{
               display:'flex',
