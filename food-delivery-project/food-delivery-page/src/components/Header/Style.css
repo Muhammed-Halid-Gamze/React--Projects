@@ -1,0 +1,9 @@
+.headerContainer{
+    display: flex;
+    border-radius: 24px;
+    width: 1511px;
+    height: 886px;
+    padding-top: 100PX;
+    /* align-items: center; */
+    
+}

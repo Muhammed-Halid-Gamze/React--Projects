@@ -1,0 +1,6 @@
+.pageContainer{
+  background: linear-gradient(304.58deg, #F4ECE1 57.1%, #FCFBF7 145.5%);
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+}
