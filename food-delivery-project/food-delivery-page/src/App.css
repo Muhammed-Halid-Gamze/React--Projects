@@ -1,9 +1,12 @@
-.pageContainer{
+.pageContainer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background: linear-gradient(304.58deg, #F4ECE1 57.1%, #FCFBF7 145.5%);
   justify-content: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 
-  align-items:center;
+  align-items: center;
 }

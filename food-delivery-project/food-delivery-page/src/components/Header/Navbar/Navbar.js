@@ -54,10 +54,11 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function Navbar() {
   return (
     <Box
-      sx={{
-        
-        // backgroundColor:'aqua'
-      }}
+      sx={
+        {
+          // backgroundColor:'aqua'
+        }
+      }
     >
       <AppBar
         position="static"
@@ -70,19 +71,18 @@ export default function Navbar() {
           justifyContent: "center",
         }}
       >
-        <Toolbar>
+        <Toolbar
+        sx={{
+          // border:'1px solid black'
+        }}
+        >
           <Box
-            // size="large"
-            // edge="start"
-            // color="inherit"
-            // aria-label="menu"
+            
             sx={{
               mr: 2,
-              //  position:'absolute',
-              width: "32px",
-              height: "32px",
-              left: "87px",
-              top: "48px",
+              
+              marginLeft:'63px'
+
               //  backgroundColor:'red'
             }}
           >
