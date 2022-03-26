@@ -7,6 +7,7 @@ import fastFood from "../../../assets/fastfood.png";
 import arrowVector from "../../../assets/arrowVector.png";
 import vector3 from "../../../assets/Vector3.png";
 import videoArrow from "../../../assets/videoArrow.png";
+import star from "../../../assets/star.png";
 import { flexbox, textAlign } from "@mui/system";
 
 function Main() {
@@ -161,8 +162,7 @@ function Main() {
                     fontSize: "20px",
                     lineHeight: "94.8%",
                     marginTop: "25px",
-                    // paddingTop:'2px'
-                  }}
+                        }}
                 >
                   Order Now
                 </p>
@@ -215,6 +215,57 @@ function Main() {
                   Watch Video
                 </p>
               </Typography>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              // border: "1px solid black",
+              marginLeft:'93px',
+              marginTop:'69px'
+            }}
+          >
+            <Box
+              sx={{
+                width: "28px",
+                height: "28px",
+                display: "flex",
+                flexDirection: "row",
+                
+              }}
+            >
+              <img src={star} alt="logo" width="100%" height="100%"/>
+              <img src={star} alt="logo" width="100%" height="100%"/>
+              <img src={star} alt="logo" width="100%" height="100%"/>
+              <img src={star} alt="logo" width="100%" height="100%"/>
+              <img src={star} alt="logo" width="100%" height="100%"/>
+              
+              
+
+              {/* yıldız */}
+            </Box>
+            <Box
+            sx={{
+              marginTop:'11px'
+            }}
+            >
+              <p
+              style={{
+                fontFamily:'Poppins',
+                fontStyle:'normal',
+                fontWeight:'600',
+                fontSize:'18px',
+                lineHeight:'139.8%',
+                color:'#909090'
+              }}
+              >
+                <strong
+                style={{
+                  color:'#2F2F2F'
+                }}
+                >5 star rating</strong><br/>
+                based on 1788 reviews
+              </p>
+              <br />
             </Box>
           </Box>
         </Grid>
