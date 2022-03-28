@@ -72,41 +72,57 @@ export default function Navbar() {
         }}
       >
         <Toolbar
-        sx={{
-          // border:'1px solid black'
-        }}
+          sx={
+            {
+              // border:'1px solid black'
+            }
+          }
         >
-          <Box
-            
-            sx={{
-              mr: 2,
-              
-              marginLeft:'63px'
-
-              //  backgroundColor:'red'
-            }}
+          <a
+            href="https://www.doordash.com/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
           >
-            <img src={logo} alt="logo" width="100%" height="100%" />
-          </Box>
-          <Typography
-            // variant="h6"
-            // component="div"
-            sx={{
+            <Box
+              sx={{
+                mr: 2,
+
+                marginLeft: "63px",
+
+                // backgroundColor:'red'
+              }}
+            >
+              <img src={logo} alt="logo" width="100%" height="100%" />
+            </Box>
+          </a>
+          <a
+            href="https://www.doordash.com/"
+            target="_blank"
+            style={{
+              textDecoration: "none",
               flexGrow: 1,
               width: "58px",
               height: "45px",
               left: "123px",
               top: "46px",
-              fontFamily: "Poppins",
-              fontStyle: "normal",
-              fontWeight: "600",
-              fontSize: "32px",
-              lineHeight: "139.8%",
-              color: "#000000",
             }}
           >
-            Foo
-          </Typography>
+            <Typography
+              // variant="h6"
+              // component="div"
+              sx={{
+                fontFamily: "Poppins",
+                fontStyle: "normal",
+                fontWeight: "600",
+                fontSize: "32px",
+                lineHeight: "139.8%",
+                color: "#000000",
+                // backgroundColor:'red'
+              }}
+            >
+              Foo
+            </Typography>
+          </a>
           <Box
             sx={{
               flexGrow: 1,
@@ -196,19 +212,22 @@ export default function Navbar() {
             >
               <img src={line} alt="logo" width="100%" height="100%" />
             </Box>
-            <Box
-              sx={{
+            <a
+              href="https://www.doordash.com/"
+              target="_blank"
+              style={{
                 position: "absolute",
                 width: "20px",
                 height: "20px",
                 justifyContent: "center",
                 marginTop: "21px",
                 marginLeft: "252px",
-                // marginLeft:'17px',
               }}
             >
-              <img src={shoppingCart} alt="logo" width="100%" height="100%" />
-            </Box>
+              <Box>
+                <img src={shoppingCart} alt="logo" width="100%" height="100%" />
+              </Box>
+            </a>
             <Box
               sx={{
                 // width:'17px',

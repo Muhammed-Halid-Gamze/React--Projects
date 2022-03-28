@@ -9,6 +9,7 @@ import vector3 from "../../../assets/Vector3.png";
 import videoArrow from "../../../assets/videoArrow.png";
 import star from "../../../assets/star.png";
 import { flexbox, textAlign } from "@mui/system";
+import { Link } from "@mui/material";
 
 function Main() {
   return (
@@ -137,71 +138,81 @@ function Main() {
                 alignItems: "center",
               }}
             >
-              <Box
-                sx={{
+              <a
+                href="https://www.doordash.com/"
+                target="_blank"
+                style={{
+                  textDecoration: "none",
+                  textAlign: "center",
+                  alignItems: "center",
+                  justifyContent: "center",
                   width: "188px",
                   height: "70px",
                   backgroundColor: "#2F2F2F",
                   boxShadow: "0px 20px 32px -8px rgba(0, 0, 0, 0.2)",
                   borderRadius: "84px",
                   marginLeft: "93px",
-                  textAlign: "center",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  // border:'1px solid black'
                 }}
               >
-                <p
-                  style={{
-                    color: "#F4ECE1",
+                <Box>
+                  <p
+                    onclick="location.href='http://www.iyibilgiler.wordpress.com'"
+                    style={{
+                      color: "#F4ECE1",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      fontFamily: "Poppins",
+                      fontStyle: "normal",
+                      fontWeight: "600",
+                      fontSize: "20px",
+                      lineHeight: "94.8%",
+                      marginTop: "25px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Order Now
+                  </p>
+                </Box>
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=_tnnZYeFYYo"
+                target="_blank"
+              >
+                <Box
+                  sx={{
+                    width: "57px",
+                    height: "57px",
+                    backgroundColor: "#FFF8F0",
+                    // border:'1px solid black',
+                    borderRadius: "50%",
                     justifyContent: "center",
                     alignItems: "center",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    fontWeight: "600",
-                    fontSize: "20px",
-                    lineHeight: "94.8%",
-                    marginTop: "25px",
-                        }}
-                >
-                  Order Now
-                </p>
-              </Box>
-              <Box
-                sx={{
-                  width: "57px",
-                  height: "57px",
-                  backgroundColor: "#FFF8F0",
-                  // border:'1px solid black',
-                  borderRadius: "50%",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  display: "flex",
-                  boxShadow: "0px 20px 36px -16px rgba(0, 0, 0, 0.1)",
-                  marginLeft: "28px",
+                    display: "flex",
+                    boxShadow: "0px 20px 36px -16px rgba(0, 0, 0, 0.1)",
+                    marginLeft: "28px",
 
-                  // paddingTop:'40px',
-                }}
-              >
-                <img
-                  src={videoArrow}
-                  alt="logo"
-                  width="21px"
-                  height="21px"
-                  style={{
-                    paddingLeft: "5px",
+                    // paddingTop:'40px',
                   }}
-                />
-              </Box>
-              <Typography
-                sx={
-                  {
-                    // border:'1px solid black'
-                  }
-                }
+                >
+                  <img
+                    onclick="location.href='http://www.iyibilgiler.wordpress.com'"
+                    src={videoArrow}
+                    alt="logo"
+                    width="21px"
+                    height="21px"
+                    style={{
+                      paddingLeft: "5px",
+                    }}
+                  />
+                </Box>
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=_tnnZYeFYYo"
+                target="_blank"
+                style={{ textDecoration: "none" }}
               >
-                <p
-                  style={{
+                <Typography
+                  sx={{
                     margintop: "25px",
                     fontSize: "20px",
                     fontFamily: "Poppins",
@@ -210,18 +221,19 @@ function Main() {
                     lineHeight: "94.8%",
                     color: "#2F2F2F",
                     marginLeft: "11px",
+                    cursor: "pointer",
                   }}
                 >
-                  Watch Video
-                </p>
-              </Typography>
+                  <p>Watch Video</p>
+                </Typography>
+              </a>
             </Box>
           </Box>
           <Box
             sx={{
               // border: "1px solid black",
-              marginLeft:'93px',
-              marginTop:'69px'
+              marginLeft: "93px",
+              marginTop: "69px",
             }}
           >
             <Box
@@ -230,39 +242,39 @@ function Main() {
                 height: "28px",
                 display: "flex",
                 flexDirection: "row",
-                
               }}
             >
-              <img src={star} alt="logo" width="100%" height="100%"/>
-              <img src={star} alt="logo" width="100%" height="100%"/>
-              <img src={star} alt="logo" width="100%" height="100%"/>
-              <img src={star} alt="logo" width="100%" height="100%"/>
-              <img src={star} alt="logo" width="100%" height="100%"/>
-              
-              
+              <img src={star} alt="logo" width="100%" height="100%" />
+              <img src={star} alt="logo" width="100%" height="100%" />
+              <img src={star} alt="logo" width="100%" height="100%" />
+              <img src={star} alt="logo" width="100%" height="100%" />
+              <img src={star} alt="logo" width="100%" height="100%" />
 
               {/* yıldız */}
             </Box>
             <Box
-            sx={{
-              marginTop:'11px'
-            }}
+              sx={{
+                marginTop: "11px",
+              }}
             >
               <p
-              style={{
-                fontFamily:'Poppins',
-                fontStyle:'normal',
-                fontWeight:'600',
-                fontSize:'18px',
-                lineHeight:'139.8%',
-                color:'#909090'
-              }}
+                style={{
+                  fontFamily: "Poppins",
+                  fontStyle: "normal",
+                  fontWeight: "600",
+                  fontSize: "18px",
+                  lineHeight: "139.8%",
+                  color: "#909090",
+                }}
               >
                 <strong
-                style={{
-                  color:'#2F2F2F'
-                }}
-                >5 star rating</strong><br/>
+                  style={{
+                    color: "#2F2F2F",
+                  }}
+                >
+                  5 star rating
+                </strong>
+                <br />
                 based on 1788 reviews
               </p>
               <br />
