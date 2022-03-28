@@ -1,28 +1,36 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 
 
-function User(props) {
-    console.log(props);
+
+function User({name, surName, myFamily, friends, isLoggedIn}) {
+    
   return (
     <div>
         <h1>{
-            props.isLoggedIn ? `${props.name} ${props.surName}`: "Giriş Yapmadınız"
+            isLoggedIn ? `${name} ${surName}`: "Giriş Yapmadınız"
             }  
             {
-              props.myFamily.map( (ferd, index) => <div key={index}>{index}-{ferd}</div>)
+              myFamily.map( (ferd, index) => <div key={index}>{index}-{ferd}</div>)
             }
             </h1>
             
 
             <div style={{fontSize:'30px'}}>
               {
-                `${props.friends}`
+                `${friends}`
                 
               }
             </div>
     </div>
   )
 }
+User.propTypes = {
+  name: propTypes.string.isRequired,
+  myFamily: propTypes.array
+  
+}
+
 
 export default User;
