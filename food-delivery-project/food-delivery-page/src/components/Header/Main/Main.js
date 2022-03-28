@@ -8,8 +8,7 @@ import arrowVector from "../../../assets/arrowVector.png";
 import vector3 from "../../../assets/Vector3.png";
 import videoArrow from "../../../assets/videoArrow.png";
 import star from "../../../assets/star.png";
-import { flexbox, textAlign } from "@mui/system";
-import { Link } from "@mui/material";
+
 
 function Main() {
   return (
@@ -156,7 +155,6 @@ function Main() {
               >
                 <Box>
                   <p
-                    onclick="location.href='http://www.iyibilgiler.wordpress.com'"
                     style={{
                       color: "#F4ECE1",
                       justifyContent: "center",
@@ -195,7 +193,6 @@ function Main() {
                   }}
                 >
                   <img
-                    onclick="location.href='http://www.iyibilgiler.wordpress.com'"
                     src={videoArrow}
                     alt="logo"
                     width="21px"
