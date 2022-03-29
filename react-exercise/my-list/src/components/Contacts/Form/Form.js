@@ -41,9 +41,11 @@ const Form = ({ addContact, contacts }) => {
           value={form.phoneNumber}
           onChange={onChangeInput}
         ></input>
-      </div>
+      </div >
+      <div className="btn"> 
+      <button >Add</button>
 
-      <button>Add</button>
+      </div>
     </form>
   );
 };
