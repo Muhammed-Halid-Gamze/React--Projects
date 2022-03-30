@@ -2,7 +2,8 @@ import "./App.css";
 // import Header from "./components/Header";
 // import User from "./components/User";
 import { useState } from "react";
-import Counter2 from "./components/Counter2";
+import User2 from "./components/user2";
+// import Counter2 from "./components/Counter2";
 // import Counter from "./components/Counter";
 
 // const myFamily = [
@@ -30,9 +31,11 @@ function App() {
 
   return (
     <div className="App">
-      {isVisible && <Counter2/>}
+
+      <User2/>
+      {/* {isVisible && <Counter2/>}
       <br/>
-      <button onClick={()=> setIsVisible(!isVisible)}>Toggle counter</button>
+      <button onClick={()=> setIsVisible(!isVisible)}>Toggle counter</button> */}
       
       {/* <h1>Merhaba {ad}</h1>
       <h2>Yaşınız {yas}</h2>
