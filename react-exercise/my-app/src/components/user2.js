@@ -9,7 +9,7 @@ const User2 = () => {
     useEffect(() => {
         axios("https://jsonplaceholder.typicode.com/albums ")
         .then(res => {
-            console.log(res)
+            console.log(res.data)
             setUsers(res.data);
             setIsLoading(false);
         })
@@ -24,7 +24,7 @@ const User2 = () => {
 
         {isLoading && <div>Loading...</div>}
         {
-            users.map(user => <div key={user.userId}>{user.title}</div>)
+            users.map(user => <div key={user.id}>{user.title}</div>)
         }
         
     </div>
