@@ -3,12 +3,13 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
 import './App.css';
 import Home from "./components/Home";
 import About from "./components/About";
 import Users from "./components/Users";
+import Error404 from "./components/Error404";
 import User from "./components/User"
 
 function App() {
@@ -18,13 +19,13 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink exact activeClassName="active" to="/" >Home</NavLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <NavLink activeClassName="active" to="/about">About</NavLink>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <NavLink activeClassName="active" to="/users">Users</NavLink>
             </li>
           </ul>
         </nav>
@@ -34,8 +35,9 @@ function App() {
         <Switch>
           <Route path="/about" component={About}></Route>
           <Route path="/users" component={Users}></Route>
-          <Route path="/user/:id" component={User}></Route>
-          <Route path="/" component={Home}></Route>
+          {/* <Route path="/user/:id" component={User}></Route> */}
+          <Route path="/" component={Home} exact></Route>
+          <Route path="*" component={Error404}></Route>
         </Switch>
       </div>
     </Router>
