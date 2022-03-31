@@ -14,7 +14,7 @@ const Validation = () => {
         },
         validationSchema: ValidationYup
     });
-    console.log(errors);
+    // console.log(errors);
 return(
 
     <div> 
