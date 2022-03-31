@@ -15,6 +15,7 @@ import Users from "./components/Users";
 import SignUp from "./components/SignUp";
 import Error404 from "./components/Error404";
 import User from "./components/User"
+import Validation from './components/Validation';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             <li>
               <NavLink activeClassName="active" to="/signup">SignUp</NavLink>
             </li>
+            <li>
+              <NavLink activeClassName="active" to="/validation">Validation</NavLink>
+            </li>
           </ul>
         </nav>
 
@@ -43,6 +47,7 @@ function App() {
           <Route path="/about" component={About}></Route>
           <Route path="/users" component={Users}></Route>
           <Route path="/signup" component={SignUp}></Route>
+          <Route path="/validation" component={Validation}></Route>
           {/* <Route path="/user/:id" component={User}></Route> */}
           <Route path="/" component={Home} exact></Route>
           <Route path="*" component={Error404}></Route>

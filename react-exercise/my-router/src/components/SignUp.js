@@ -1,27 +1,25 @@
 import React from "react";
-import { Formik } from "formik";
-
+import { Formik, FormikConsumer, useFormik } from "formik";
+// Formik yerine içindeki FormikConsumer.ları tanımladık aşağıda
 const SignUp = () => {
+  const {handleChange, handleSubmit, values} = useFormik({ 
+    initialValues:{
+      firstName: "Ali",
+      lastName: "Veli",
+      email: "4950@gmail.com",
+      gender: "male",
+      hobies:[],
+      country:"Turkey"
+  }, 
+  onSubmit: values =>{
+    console.log(values);
+  },
+});
   return (
     <div>
       <h1>Sign Up</h1>
-      <br />
-      <br />
-      <Formik
-        initialValues={{
-          firstName: "Ali",
-          lastName: "Veli",
-          email: "4950@gmail.com",
-          gender: "male",
-          hobies:[],
-          country:"Turkey"
-
-        }}
-        onSubmit={(values) => {
-          console.log(values);
-        }}
-      >
-        {({ handleSubmit, handleChange, values }) => (
+     
+       
           <form onSubmit={handleSubmit}>
             <label htmlFor="firstName">First Name</label>
             <input
@@ -103,8 +101,7 @@ const SignUp = () => {
 
             <code>{JSON.stringify(values)}</code>
           </form>
-        )}
-      </Formik>
+       
     </div>
   );
 };
