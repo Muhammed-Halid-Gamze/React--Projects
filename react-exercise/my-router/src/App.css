@@ -1,8 +1,25 @@
 .App {
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  
+  
 }
 
 .active{
   background-color: bisque;
   color: brown;
+}
+
+a { 
+  text-decoration: none;
+}
+
+ul{
+  
+  list-style-type: none;
 }
