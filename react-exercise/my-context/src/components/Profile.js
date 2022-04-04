@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useContext } from 'react'
 import UserContext from '../context/UserContext'
 
-const Profil = () => {
+const Profile = () => {
     const{user, setUser} = useContext(UserContext);
     
    
@@ -33,4 +33,4 @@ const Profil = () => {
   )
 }
 
-export default Profil
+export default Profile

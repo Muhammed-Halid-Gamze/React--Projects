@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Button from './Button'
-import Profil from './Profil'
+import Profile from './Profile'
 import { useContext } from 'react'
 import ThemeContext from '../context/ThemeContext'
 
@@ -13,7 +13,7 @@ const Container = () => {
       <hr/>
       <Button/>
       <hr />
-      <Profil/>
+      <Profile/>
     </div>
   )
 }
