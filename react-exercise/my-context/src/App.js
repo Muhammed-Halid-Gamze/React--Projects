@@ -7,9 +7,7 @@ import {ThemeProvider} from './context/ThemeContext';
 function App() {
   return (
     <ThemeProvider>
-      <Header/>
-      <hr/>
-      <Button/>
+      <Container/>
     </ThemeProvider>
     
  
