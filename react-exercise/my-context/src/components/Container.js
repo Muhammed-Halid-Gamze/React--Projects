@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Button from './Button'
+import Profil from './Profil'
 import { useContext } from 'react'
 import ThemeContext from '../context/ThemeContext'
 
@@ -11,6 +12,8 @@ const Container = () => {
       <Header/>
       <hr/>
       <Button/>
+      <hr />
+      <Profil/>
     </div>
   )
 }
