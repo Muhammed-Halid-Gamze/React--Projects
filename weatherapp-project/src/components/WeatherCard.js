@@ -5,18 +5,15 @@ import WeatherContext from '../context/WeatherContext'
 
 const WeatherCard = () => {
          
-  const {card, setCard} = useContext(WeatherContext)
-    console.log(card.city)
+  const {card, setCard} = useContext(WeatherContext)  
+
+
+    
   return (
       <div className='Container'>
-          <label for="cities">Choose City Name</label><br/>
-          <select name="cities">
-            <option value="Istanbul">Istanbul</option>
-            <option value="Izmır">Izmır</option>
-            <option value="Ankara">Ankara</option>
-            <option value="Trabzon">Trabzon</option>
-              
-          </select>
+          <label htmlFor="cities">Enter City Name</label><br/>
+          <input type="text" id='searchBar' name='cities' ></input>
+         
         <div className='cardContainer'>
             <div className="city">{card.city}</div>
             <div className="tempereture">{card.tempereture}°C</div>
@@ -26,5 +23,6 @@ const WeatherCard = () => {
     </div>
   )
 }
+
 
 export default WeatherCard
