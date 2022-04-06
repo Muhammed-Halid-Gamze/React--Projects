@@ -1,12 +1,15 @@
-import React from 'react'
-// import ChatContext from '../context/ChatContext'
-// import { useContext } from 'react'
+
+import styles from "./styles.module.css"
+import {useChat} from '../context/ChatContext'
 
 const ChatList = () => {
-
+  const {messages} = useChat();
 
   return (
-    <div>ChatList</div>
+    <div className={styles.chatlist}>
+
+      ChatList
+    </div>
   )
 }
 
